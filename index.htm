@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+	<title>CLINIC WEBSITE</title>
+    
+<style>
+body {
+  margin:0px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+#intro {
+  height: 100vh;
+  text-align: center;
+  padding-top: 5%;
+
+  
+}
+h1, h2 {
+  font-family: 'Berkshire Swash', cursive;
+  color: DarkSlateBlue;
+  text-align: center;
+  font-size: 30px;
+}
+h3 {
+font-family: 'Assistant', sans-serif;
+  font-size: 24px;
+}
+#intro p {
+  font-family: 'Assistant', sans-serif;
+  color: DarkSlateBlue;
+  font-size: 22px;
+}
+.button {
+  background-color: purple;
+  border: none;
+  color: gold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 120%;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.button:hover {
+  background: DarkBlue;
+}
+#quest {
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+}
+#quiz {
+  text-align: center;
+      animation-name: bright;
+  animation-duration: 2s;
+}
+.q {
+  position: absolute;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  width: 100%;
+  height: 100%;
+  font-family: 'Assistant', sans-serif;
+
+}
+.q p {
+ width: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+.q button {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+#Result {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-family: 'Assistant', sans-serif;
+}
+#rgirl, #rboy {
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+#dreport {
+  font-size: 18px;
+}
+
+#improve {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+@keyframes bright {
+  from {opacity: 0;}
+  to opacity: 1;}
+}
+</style>    
+</head>
+
+<body>
+
+<div id="intro">
+  <h1>Are you Feminist or Feminine?</h1>
+  <p>Take our quiz to find out</p>
+  <p style="font-size: 15px;">[For entertainment only]</p>
+  <button onclick="thequiz()" class="button">Start</button>
+</div>
+
+<div id="quiz">
+  
+ <h2>Are you Feminist or Feminine?</h2>
+  <h3>Does this describe you?</h3>
+  
+  <div id="quest">
+    
+    <div class="q">
+  <p>I am like the ocean. I have empathy and I am nurturing. I have a diffused awareness, thinking many things at once and I find details and intricacies that are beautiful. I am born to receive.  I identify with feelings and crave to love and deeply feel fulfilled. I am a co-creator and i bring more fun, more music, more gentleness, more creativity, and more collaboration to reach desired results.</p>
+  <button onclick="female()" class="button">Yes</button>
+      <button onclick="urresult1()" value="You lack feminine charm: You have a rigid and linear energy which is identifies as masculine.Being a woman is all about bringing a special spark and a sense of mystery with you wherever you go! Remember that, as a woman, your feminine energy is always there, even if you can’t feel it. It just needs to be reawakened. It’s an energy that will make you intuitive, compassionate, creative, sensitive, receptive, tender, kind, radiant, nurturing, and – most importantly – unstoppable!" class="feminist button">No</button>
+    </div>
+    
+        <div class="q">
+  <p>I have a life direction and purpose and can achieve anything I put my mind to it. My life is controlled by what i focus on. I set my goals high and don't stop until I get there. I don't decrease the goal, I increase the effort. I don't like dwelling on feeling and emotions. I transend emotions into awareness.</p>
+  <button onclick="male()" value="You are too ambitious:  Its great that you have a strong purpose and direction. But you need to reduce your linear and rigid spirit. Rigidness in individuals can indicate depression and anxiety. People who are controlling and inflexible often find themselves frustrated because the rest of the world doesn't live by their rules and expectations. You need to develop flexibility. Flexibility means seeing things from different perspectives, tolerating ambiguity, taking risks, and learning from mistakes. It helps us adapt to a constantly changing environment and shows that we can handle diversity and accept other people's preferences. Flexibility leads to openness, more opportunities, and less depression and anxiety." class="button">Yes</button>
+  <button onclick="female()" class="button" >No </button>
+    </div>
+    
+    
+          <div class="q">
+  <p>I love to be praised for only being being a woman.   </p>
+  <button onclick="female()" class="button">Yes</button>
+  <button onclick="male()" value="You are ashamed to be a woman: You need to accept your feminine energy. There is nothing wrong with compliments. Any time you receive a compliment, reply with 'Thank you.' It’s a simple, but powerful phrase. The person bestowing the compliment will be most receptive to a humble response. Say something like, 'Thank you, that’s very kind of you,' or 'Thank you, I appreciate the compliment.'" class="feminist button" >No</button>
+    </div>
+    
+    
+              <div class="q">
+  <p>I want to be praised for my career achivements and what i build for the world. I want people to remember my work long after i'm gone. </p>
+  <button class="button" onclick="male()" value=" career and achivements are masculine traits" class="You love this world: Career is great for worldly upkeep, but christ said: For what is a man profited, if he shall gain the whole world, and lose his own soul? or what shall a man give in exchange for his soul? (Matthew 16:26). At the end of the day, careers are an empty and thankless pursuit: Then I considered all that my hands had done and the toil I had expended in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be gained under the sun. (Ecclesiastes 2:11)">Yes</button>
+  <button onclick="female()" class="button">No</button>
+    </div>
+    
+    
+                  <div class="q">
+  <p>I am moved by love and emotions. I love sensations and feelings. Emotions are a part of my life. Emotions and feelings can be used to build things.</p>
+  <button onclick="female()" class="button">Yes</button>
+  <button onclick="male()" value="You envy men: While the masculine is defined by logic, the feminine is expressed through emotions. We all have emotional selves, but many of us haven't been taught how to understand our feelings. You need to become aware of and regulate your own emotions while also empathetically being aware of the emotions and reactions of those around you. As you become more and more emotionally intelligent, you're enabled to govern your relationship with yourself and others more efficaciously, even in the face of conflict. " class="feminist button">No</>
+    </div>
+    
+                    
+    
+                    
+  
+     
+     <div class="q">
+  <p>Small details matter to me and its important to constantly nurture them. I spend time to make things beautiful even if people don't notice or they are not practicle. </p>
+  <button onclick="female()" class="button">Yes</button>
+  <button onclick="male()" value="You hate the feminine energy: A woman has a diffused awareness, thinking many things at once and she finds details and intricacies that escapes the masculine. This skill enables us to nurture children and sustain life on earth. The feminine craves to feel and see the beauty around us and in us." class="feminist button">No</>
+    </div>
+    
+           
+   
+       <div class="q">
+  <p>I don't let go of things, people and situations easily </p>
+  <button onclick="female()" class="button">Yes</button>
+  <button class="button" onclick="male()">No</>
+    </div>
+    
+                    
+                <div class="q">
+  <p>I can let go of things, people and situations easily</p>
+  <button onclick="male()" class="feminist button">Yes</button>
+  <button onclick="female()" class="button">No</button>
+    </div> 
+         
+         
+         <div class="q">
+  <p>I am a multi tasker </p>
+  <button onclick="female()" class="button">Yes</button>
+  <button onclick="male()"  class="feminist button">No</>
+    </div>
+    
+                    
+                <div class="q">
+  <p>I can only focus on one thing at a time. It is more productive to focus on one thing. </p>
+  <button onclick="male()" value="You are disorganized: Men are slower and less organised than women when switching rapidly between tasks in tests by UK psychologists. You need to develop your ability to multi-task. Remember, you are a helpmeet so you need multiple skills and knowledge to help your husband" class="feminist button">Yes</button>
+  <button onclick="female()" class="button">No</button>
+    </div> 
+    
+         
+         <div class="q">
+  <p>I look for love </p>
+  <button onclick="female()" class="button">Yes</button>
+           <button onclick="male()" value="You are rebelious: According to the bible, a woman is designed to seek love - 'and thy desire shall be to thy husband, and he shall rule over thee.' (Genesis 3:16) You may not love your man, but you do love your career or money which manifests masculine energy. Take time to think of your piorities and change." class="feminist button">No</>
+    </div>
+    
+             </div>
+                    
+                <div class="q">
+  <p>I look for problems to solve</p>
+  <button onclick="male()" value="You may have alot of pride: In the bible, Eve wanted to be a judge (knowing good and evil) and solve problems - which did not exist in paradise. God gave man the power to resolve problems better than women, as long as he kept his laws. Womens place  is to support men so they can resolve the worlds problems in order to make it a better place. " class="feminist button">Yes</button>
+  <button onclick="female()" class="button">No</button>
+    </div> 
+  
+  
+  
+    <div id="tracker">
+   <input type="number" value="0" id="fscore">
+  <input type="number" value="0" id="mscore">
+  <input type="number" value="0" id="classindex">
+  <div id="sex"></div>
+  </div>
+  
+</div>
+
+
+<div id="Result">
+  <h1 id="majorresults">These are your results </h1>
+  <div id="rgirl"></div>
+  <div id="rboy"></div>
+  <div id="improve"></div>
+  <div id="dreport"></div>
+</div>
+
+<script>
+document.getElementById("intro").style.display="block";
+document.getElementById("quiz").style.display="none";
+document.getElementById("Result").style.display="none";
+document.getElementsByClassName("q")[0].style.zIndex="30";
+
+f = 0;
+m = 0;
+cq=0;
+
+
+function thequiz(){
+document.getElementById("intro").style.display="none"; document.getElementById("quiz").style.display="block";
+}
+
+function female(){
+document.getElementById("fscore").value = ++f;
+temp();
+}
+function male(){
+document.getElementById("mscore").value = ++m;
+temp();
+urresult();
+}
+
+function temp(){
+ 
+  document.getElementById("classindex").value = ++cq;
+  if (cq < document.getElementsByClassName("q").length) {
+document.getElementsByClassName("q")[cq].style.zIndex="30";
+  }
+  else {
+document.getElementById("quiz").style.display="none";   document.getElementById("Result").style.display="block"; 
+    report();
+  }
+  
+}
+
+function urresult(){
+  problem = document.getElementsByClassName("feminist")[cq].value;
+   var node = document.createElement("p");
+  var textnode = document.createTextNode(problem);
+  node.appendChild(textnode); document.getElementById("sex").appendChild(node); 
+document.getElementById("dreport").appendChild(node); 
+}
+
+function urresult1(){
+  problem = document.getElementsByClassName("feminist")[cq].value;
+   var node = document.createElement("p");
+  var textnode = document.createTextNode(problem);
+  node.appendChild(textnode); document.getElementById("sex").appendChild(node); 
+document.getElementById("dreport").appendChild(node); 
+  male();
+}
+
+function report() {
+  aaa = document.getElementsByClassName("q").length;
+  fpercent = Math.round(f/aaa*100);
+  mpercent = Math.round(m/aaa*100);
+  
+  
+  if (f > m){
+  document.getElementById("majorresults").innerHTML = "Good News! You are feminine";
+     document.getElementById("improve").innerHTML = "Here is what you can do to improve";
+}
+  else if (f == m){
+     document.getElementById("majorresults").innerHTML = "You are not a complete feminist, but you can improve";
+     document.getElementById("improve").innerHTML = "Here is what you can do to improve";
+  }
+  else {
+    document.getElementById("majorresults").innerHTML = "Sad to say, you are a feminist";
+    document.getElementById("improve").innerHTML = "Here is what you can do to improve";
+  }
+  
+  document.getElementById("rgirl").innerHTML = "You are " + fpercent + " % feminine ";
+document.getElementById("rgirl").style.background="pink";
+document.getElementById("rgirl").style.width= fpercent + "%"; 
+  
+  document.getElementById("rboy").innerHTML = "You are " + mpercent + " % feminist"; document.getElementById("rboy").style.background="red";
+document.getElementById("rboy").style.width= mpercent + "%"; 
+  
+  
+document.getElementById("dreport").appendChild(node);
+
+}
+</script>
+</body>
+
+</html>
+
